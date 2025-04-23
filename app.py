@@ -6,7 +6,7 @@ import seaborn as sns
 import io
 
 # Configuração inicial do Streamlit
-st.set_page_config(page_title="Calculadora de Produtividade", page_icon="📈", layout="wide")
+st.set_page_config(page_title="Calculadora de Produtividade - Perim Distribuidora", page_icon="📈", layout="wide")
 
 # Média base de produtividade
 MEDIA_BASE = 2.5  # 2,5 peças por minuto por colaborador
@@ -92,7 +92,7 @@ def exportar_csv(ind, eq, comparativo):
     return buffer.getvalue()
 
 # Layout Streamlit
-st.title("📈 Calculadora de Produtividade")
+st.title("📈 Calculadora de Produtividade - Perim Distribuidora")
 st.markdown("**Insira os dados abaixo para calcular a produtividade da equipe.**")
 
 # Instruções rápidas
@@ -199,4 +199,4 @@ if st.button("Calcular", use_container_width=True):
 
 # Rodapé
 st.markdown("---")
-st.markdown("**Desenvolvido para [Perim Distribuidora] | Contato: tiago.freitas@perimdistribuidora.com.br**", unsafe_allow_html=True)
+st.markdown("**Desenvolvido para Perim Distribuidora | Contato: tiago.freitas@perimdistribuidora.com.br**", unsafe_allow_html=True)
