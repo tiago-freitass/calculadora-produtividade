@@ -199,4 +199,4 @@ if st.button("Calcular", use_container_width=True):
 
 # Rodapé
 st.markdown("---")
-st.markdown("**Desenvolvido para Perim Distribuidora | Contato: tiago.freitas@perimdistribuidora.com.br**", unsafe_allow_html=True)
+st.markdown("**Desenvolvido para [Perim Distribuidora] | Contato: tiago.freitas@perimdistribuidora.com.br**", unsafe_allow_html=True)
