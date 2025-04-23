@@ -6,7 +6,7 @@ import seaborn as sns
 import io
 
 # Configuração inicial do Streamlit
-st.set_page_config(page_title="Calculadora de Produtividade - Perim Distribuidora", page_icon="📈", layout="wide")
+st.set_page_config(page_title="Calculadora de Produtividade", page_icon="📈", layout="wide")
 
 # Média base de produtividade
 MEDIA_BASE = 2.5  # 2,5 peças por minuto por colaborador
