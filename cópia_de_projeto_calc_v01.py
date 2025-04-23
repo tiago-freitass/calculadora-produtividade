@@ -54,7 +54,7 @@ if st.button("Calcular"):
         st.write(pd.DataFrame(resultados["comparativo"], index=["Valor"]).T)
 
         fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(12, 5))
-        ax1.bar(["Média Base", "Atual"], [MEDIA_BASE, resultados["comparativo"]["Produtividade Atual"]], color=['blue', 'orange'])
+        ax1.bar(["Média Base", "Produtividade Atual"], [MEDIA_BASE, prod_ind_minuto], color=['#4B8BBE', '#306998'])  # Azul python vibes
         ax1.set_title("Comparativo (Individual)")
         ax1.set_ylabel("Peças/min/colaborador")
         eq_vals = resultados["eq"]
