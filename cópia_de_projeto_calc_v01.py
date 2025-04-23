@@ -28,7 +28,7 @@ def calcular_produtividade(itens, tempo_minutos, colaboradores):
     }
 
 # Layout Streamlit
-st.title("📊 Calculadora de Produtividade")
+st.title("📈Calculadora de Produtividade")
 
 itens = st.number_input("Itens Separados", min_value=0)
 tempo = st.number_input("Tempo (minutos)", min_value=1.0)
@@ -50,7 +50,7 @@ if st.button("Calcular"):
             use_container_width=True
         )
 
-        st.subheader("📈 Comparativo com Média Base")
+        st.subheader("📊 Comparativo com Média Base")
         st.dataframe(
             pd.DataFrame(resultados["comparativo"], index=["Valor"]).T.style.set_properties(**{'text-align': 'center'}),
             use_container_width=True
